@@ -5,20 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Lato&display=swap" rel="stylesheet">
     <title>Horea</title>
     
 </head>
 
 <!-- This is a comment about stuff that I am doing right now. I am learning HTML, CSS and JavaScript by working on a nano-project -->
 <body>
-    <nav class="menuNavigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="">New Product</a></li>
-        </ul>
-    </nav>
+
+    <header>
+        <nav class="menuNavigation">
+            <ul>
+                <li class="listElem_header"><a id="myStore_header" href="index.html">Amazing store</a></li>
+                <li class="listElem_header">
+                    <img class="img_header" src="icons/map-marker-alt-solid.svg">
+                    My city: <a id="adr_header" target="blank" href="https://www.google.com/maps/place/Timi%C8%99oara/@45.741163,21.1465499,12z/data=!3m1!4b1!4m5!3m4!1s0x4745677dcb0fb5a7:0x537faf6473936749!8m2!3d45.7488716!4d21.2086793">Timisoara</a></li>
+                <li class="listElem_header">
+                    <img class="img_header" src="icons/phone-alt-solid.svg">
+                    +40 774 665 305</li>
+                <li class="listInList_header">
+                    <ul >
+                        <li>Shipping</li>
+                        <li>Blog</li>
+                        <li>Company</li>
+                        <li>My account</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="categoriesDiv_header">
+                <ul class="categoriesUl_header">
+                    <li id="categoriesElementAll">ALL CATEGORIES</li>
+                    <li class="categoriesElement">FACE
+                        <ul >
+                            <li class="categoriesSubelement"><a href="">Creams & gels</a></li>
+                            <li class="categoriesSubelement"><a href="">Patches</a></li>
+                            <li class="categoriesSubelement"><a href="">Emulsions</a></li>
+                            <li class="categoriesSubelement"><a href="">Toners</a></li>
+                            <li class="categoriesSubelement"><a href="">Face cleansing</a></li>
+                            <li class="categoriesSubelement"><a href="">Make up removal</a></li>
+                            <li class="categoriesSubelement"><a href="">Scrubs</a></li>
+                            <li class="categoriesSubelement"><a href="">Peeling</a></li>
+                            <li class="categoriesSubelement"><a href="">Masks</a></li>
+                        </ul>
+                    </li>
+                    <li class="categoriesElement">BODY</li>
+                    <li class="categoriesElement">FOOT</li>
+                    <li class="categoriesElement">HANDS</li>
+                    <li class="categoriesElement">HAIR</li>
+                    <li class="categoriesElement">MAKEUP</li>
+                </ul>
+        </div>
+
+        <div class="searchBarDiv">
+            <form class="searchBar">
+                <button class="button">
+                    <img id="searchButton" src="icons/search-solid.svg">
+                </button>
+                <input type="text" placeholder="Search products by SKU or name" name="Search">   
+            </form>
+
+
+        </div>
+
+        <div class="cartWithIcon">
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+    
 
     <footer>
         <table class="contactData">
