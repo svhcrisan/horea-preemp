@@ -1,0 +1,44 @@
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.tableProduts {
+    width: 100%;
+}
+
+.tableProduts tbody tr td {
+    text-align: center;
+}
+
+.contactData {
+    width: 100%;
+}
+
+
+.contactData tbody tr td{
+    text-align: center;
+}
+
+.contactData tbody tr td a{
+    text-decoration: none;
+}
+
+.menuNavigation ul li {
+    display: block;
+    width: 90px;
+    padding: 12px;
+    background-color: bisque;
+}
+
+.menuNavigation ul li a {
+    text-decoration: none;
+}
+
+.descriptionLong {
+    width: 500px;
+}
+
+.productsFooter div a {
+    text-decoration: none;
+}
