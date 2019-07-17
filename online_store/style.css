@@ -47,6 +47,11 @@ header {
     float: right;
 }
 
+.listInList_header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
 .listElem_header {
     padding-right: 70px;
 }
@@ -89,7 +94,7 @@ header {
 }
 
 
-.categoriesSubelement {
+.categoriesSubelement li {
     padding-bottom: 12px;
 }
 
@@ -114,6 +119,7 @@ header {
 
 
 input[type=text] {
+    background-attachment: left;
     padding: 0px;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -138,4 +144,10 @@ input[type=text] {
 
 .contactData tbody tr td a{
     text-decoration: none;
+}
+
+.cartWithIcon {
+    position: absolute;
+    right: 0px;
+    margin-right: 240px;
 }
