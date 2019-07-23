@@ -1,36 +1,35 @@
 (function(){
+    console.log('cONNECTED');
 
     const img = document.createElement("img");
     const show = document.createElement("span");
-    const hide = document.createElement("span");
+    const alsoShow = document.createElement("span");
     const del = document.createElement("span");
     const page = document.getElementById("root");
     const body = document.body;
     const theImage = document.getElementById("the-image");
-
+    
 
     let newSpan = document.createElement("span");
     
-
-
-    
-
     show.innerHTML = "Show";
-    hide.innerHTML = "Hide";
+    
     del.innerHTML = "Delete";
+    alsoShow.innerHTML = "Also show";
     page.appendChild(show);
-    page.appendChild(hide);
+
     page.appendChild(del);
+    page.appendChild(alsoShow);
     theImage.appendChild(img);
     img.classList.add("img");
 
     page.style = "margin: 0px; width: 100%; display: flex; flex-direction: row; justify-content: center;";
 
-    show.setAttribute("style", "background-color: green; padding: 15px; border-radius: 5px; margin: 15px; color: white;");
+    show.setAttribute("style", "background-color: #56f7a2; padding: 15px; border-radius: 5px; margin: 15px; color: white;");
 
-    hide.setAttribute("style", "background-color: red; padding: 15px; border-radius: 5px; margin: 15px; color: white;");
+    alsoShow.setAttribute("style", "background-color: #99c9ff; padding: 15px; border-radius: 5px; margin: 15px; color: white;");
 
-    del.setAttribute("style", "background-color: grey; padding: 15px; border-radius: 5px; margin: 15px; color: white;");
+    del.setAttribute("style", "background-color: #ff6767; padding: 15px; border-radius: 5px; margin: 15px; color: white;");
     
     img.src = "images/img1.jpg";
     img.setAttribute("style", "width: 600px; height: 350px; display: none;");
@@ -47,15 +46,6 @@
             img.style.display = "block";
         } else {
             newSpan.innerText = "There is nothing to show.";
-            theImage.appendChild(newSpan);
-        }
-    });
-
-    hide.addEventListener("click", function(event){
-        if(document.getElementsByClassName("img")[0]) {
-            img.style.display = "none";
-        } else {
-            newSpan.innerText = "There is nothing to hide.";
             theImage.appendChild(newSpan);
         }
     });
@@ -80,6 +70,14 @@
         //alert("Something was clicked.");
     }, false);
 
+    
+
+    alsoShow.addEventListener("click", function(event) {
+        show.click();
+    });
+
+
+    
 
 
 

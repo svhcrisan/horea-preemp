@@ -57,7 +57,7 @@ var link = document.getElementById("button");
 var event = new Event("build");
 
 window.addEventListener("build", function(event) {
-    alert("Al 3-lea click.")
+    alert("Al 3-lea click.");
 }, false);
 var count = 0;
 link.addEventListener("click", function(eee) {
