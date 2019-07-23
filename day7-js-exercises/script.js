@@ -36,8 +36,8 @@
     
 
     function imgFunction() {
+        alert("The image will be hidden.");
         this.style.display = "none";
-        theImage.dispatchEvent(customEvent);
     }
 
     img.addEventListener("click", imgFunction, false);
@@ -45,6 +45,7 @@
     show.addEventListener("click", function(event){
         if(document.getElementsByClassName("img")[0]) {
             img.style.display = "block";
+            theImage.dispatchEvent(customEvent);
         } else {
             newSpan.innerText = "There is nothing to show.";
             theImage.appendChild(newSpan);
