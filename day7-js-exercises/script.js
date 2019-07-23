@@ -5,7 +5,7 @@
     const hide = document.createElement("span");
     const del = document.createElement("span");
     const page = document.getElementById("root");
-    const body = document.getElementById("body");
+    const body = document.body;
     const theImage = document.getElementById("the-image");
 
 
@@ -76,9 +76,9 @@
     });
 
     body.addEventListener("click", function(event){
-        console.log(event.target);
-
-    });
+        console.log(event.currentTarget.nodeName, event.target.nodeName);
+        //alert("Something was clicked.");
+    }, false);
 
 
 
