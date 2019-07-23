@@ -37,6 +37,7 @@
 
     function imgFunction() {
         this.style.display = "none";
+        theImage.dispatchEvent(customEvent);
     }
 
     img.addEventListener("click", imgFunction, false);
@@ -72,12 +73,17 @@
 
     
 
+    //ex3
     alsoShow.addEventListener("click", function(event) {
         show.click();
     });
 
 
-    
+    //ex4
+    var customEvent = new Event("customEvent");
+    theImage.addEventListener("customEvent", function(customEvent){
+        alert("DISPACHED EVENT, BEWARE!");
+    });
 
 
 
