@@ -439,6 +439,7 @@ h1 {
  }
 
  .add-to-cart {
+    opacity: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -471,3 +472,39 @@ h1 {
       background-color: red;
     }
   }
+
+
+/*--- MODAL ---*/
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 5px;
+    
+}
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-top-right-3 {
+    display: flex;
+    justify-content: space-between;
+}
