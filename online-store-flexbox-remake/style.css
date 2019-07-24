@@ -29,6 +29,7 @@ header {
 .header-left {
     display: flex;
     width: 25%;
+    padding-right: 2rem;
 }
 
 h1 {
@@ -45,6 +46,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 75%;
+    
 }
 
 .header-right-top {
@@ -120,13 +122,13 @@ h1 {
 }
 
 .searchbar {
-    padding: 0rem 0rem 1rem 0rem;
+    padding: 0 0 16px 0;
     width: 71%;
 }
 
 .searchbar input {
     width: 100%;
-    height: 3rem;
+    height: 48px;
     border-radius: 5px;
     border-color: #fff;
     border: 0px;
@@ -142,7 +144,7 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 20%;
-    padding-bottom: 1em;
+    padding-bottom: 16px;
 
 }
 
@@ -153,9 +155,8 @@ h1 {
     background-color: rgba(99,100,216,1);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 37.2px;
     width: 75%;
-    height: 100%;
+    height: 50px;
 }
 
 .shopping-cart-1 div {
@@ -167,9 +168,9 @@ h1 {
 
 }
 
-.shopping-cart-1 div p {
-    margin: 16px 0px;
+.shopping-cart-1 div span {
     font-size: 14px;
+    padding: 16px 0;
     color: #fff;
     opacity: 0.8;
 }
@@ -179,14 +180,23 @@ h1 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 0;
-    height: 100%;
+    height: 50px;
     width: 25%;
 }
 
 .shopping-cart-2 div {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #fff;
+    margin: 0;
     opacity: 0.8;
+}
+
+.shopping-cart-2 div span {
+    font-size: 14px;
+    padding: 16px 0;
+    color: #fff;
+    opacity: 1;
 }
 
 /* Hello there content! The header is done.*/
@@ -207,10 +217,10 @@ h1 {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    margin-right: 2rem;
-    margin-top: -4rem;
+    margin-top: -66px;
     background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px rgba(218, 223, 225, .6);
+    font-size: 14px;
 }
 
 .categories h6 {
@@ -237,23 +247,45 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 25%;
+    padding-right: 2rem;
 }
 
 .ads {
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column;  
 }
 
-.ads img {
+.my-ad {
     height: 300px;
-    width: auto;
-    margin-right: 2rem;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-image: url("images/imgads.jpg");
+    background-size: cover;
+    box-shadow: 0px 10px 20px rgba(218, 223, 225, .6);
     border-radius: 5px;
     margin-top: 2rem;
-    height: 22rem;
+}
+
+.my-ad h4 {
+    font-weight: 300;
+    margin: 0;
+    padding: 1.3rem 0 0 1.5rem;
+}
+
+.my-ad h3 {
+    margin: 0;
+    padding: 5rem 0 0 1.5rem;
+
+}
+
+.my-ad hr {
+    margin: .5rem 0 0 1.5rem;
+    background-color: #000;
+}
+
+.my-ad h2 {
+    margin: 0;
+    padding: 1.5rem 0 0 1.5rem;
+    font-size: 40px;
+    color: rgba(99,100,216,1);
 }
 
 /* right part of the body */
@@ -274,6 +306,7 @@ h1 {
 
 .br1-left{
     width: 25%;
+    
 }
 
 .br1-left h2 {
@@ -356,7 +389,7 @@ h1 {
 }
 
 .body-right-3 {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -364,21 +397,22 @@ h1 {
 }
 
 .product-page {
-    width: 20%;
-    padding: .4rem .4rem;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
     margin-bottom: 2rem;
     border-radius: 5px;
-    border-color: #000;
     border: 1px solid lightgrey;
+    box-shadow: -5px 10px 20px rgba(218, 223, 225, 0.2);
+
 }
 
 .product-page img {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    height: 11.5vw;
-    width: 11.5vw;
+    margin: .4rem .4rem 0 .4rem;
+    height: 11vw;
+    width: auto;
 }
 
 .product-img {
@@ -390,7 +424,7 @@ h1 {
 .product-page h4 {
     font-weight: 400;
     text-align: center;
-    margin: 1rem 0rem;
+    margin: 1rem .4rem;
 }
 
 .product-page span {
@@ -398,13 +432,79 @@ h1 {
     justify-content: center;
     margin-bottom: 1rem;
     color: gold;
+    
 }
  hr {
     margin: 0;
  }
 
- @media only screen and (max-width: 600px) {
+ .add-to-cart {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom-left-radius:  5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(99,100,216,1);
+    height: 40px;
+ }
+
+ .add-to-cart:hover{
+     
+     background: #088DA5;
+ }
+
+.add-to-cart a {
+    color: #fff;
+    margin: 0;
+    
+ }
+
+ @media only screen and (max-width: 800px) {
     body {
       background-color: lightblue;
     }
   }
+
+  @media only screen and (max-width: 1150px) {
+    body {
+      background-color: red;
+    }
+  }
+
+
+/*--- MODAL ---*/
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 5px;
+    
+}
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-top-right-3 {
+    display: flex;
+    justify-content: space-between;
+}

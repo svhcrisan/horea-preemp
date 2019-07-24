@@ -41,12 +41,12 @@
                         <div class="shopping-cart-1">
                             <div>
                                 <img src="icons/shopping-cart-solid.svg" alt="shopping car">
-                                <p>MY CART</p>
+                                <span>MY CART</span>
                             </div>
                         </div>
                         <div class="shopping-cart-2">
                             <div>
-                                <p>12</p>
+                                <span>12</span>
                             </div>
                         </div>
                     </div>
@@ -69,12 +69,18 @@
                     <li><a href="">MAKEUP</a></li>
                 </ul>
             </div>
-
             <div class="ads">
-                <img src="images/imgads.jpg" alt="">
-            </div>
+                <!--here is the ad, a div with a background-->
+                <div class="my-ad">
+                    <h4>TODAY'S OFFER</h4>
+                    <h3>Nooni Sprout<br>Smoothing Toner</h3>
+                    <hr width="20px">
+                    <h2>30% OFF</h2>
 
+                </div>
+            </div>
         </div>
+        
 
         <div class="body-right">
             <div class="body-right-1">
@@ -100,11 +106,10 @@
             <hr width="100%" noshade="noshade" size="1" color="#808080">
             <div class="body-right-3">
                 <div class="product-page">
-
                     <img src="images/img1.jpg" alt="img" class="product-img">
                     <h4>Missha All Around Safe Block Sebum Zero Gel</h4>
                     <span>$4.00</span>
-                    <span></span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
@@ -112,6 +117,7 @@
                     <img src="images/img2.png" alt="img" class="product-img">
                     <h4>Innisfree Green Tea Balancing Cream</h4>
                     <span>$18.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
@@ -119,6 +125,7 @@
                     <img src="images/img3.jpg" alt="img" class="product-img">
                     <h4>Claire's Cloud 9 Blanc De Whitening Cream</h4>
                     <span>$20.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
@@ -126,6 +133,7 @@
                     <img src="images/img4.jpg" alt="img" class="product-img">
                     <h4>Tonymoly Pure Eco Snail Moisture Gel</h4>
                     <span>$8.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
@@ -133,6 +141,7 @@
                     <img src="images/img5.jpg" alt="img" class="product-img">
                     <h4>Skin79 Fresh Garden Mask-Snail</h4>
                     <span>$2.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
@@ -140,6 +149,7 @@
                     <img src="images/img6.jpg" alt="img" class="product-img">
                     <h4>Cosrx Advanced Snail 92 All in One Cream</h4>
                     <span>$24.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
@@ -147,22 +157,78 @@
                     <img src="images/img7.jpg" alt="img" class="product-img">
                     <h4>Innisfree Canola Honey Mask</h4>
                     <span>$14.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
 
                 <div class="product-page">
                     <img src="images/img8.jpg" alt="img" class="product-img">
                     <h4>Scinic Honey Banana Cleansing Foam</h4>
                     <span>$4.00</span>
+                    <div class="add-to-cart"><a href="">Add to cart</a></div>
                 </div>
             </div>
         </div>
+    </div>
 
-    
+
+
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal-top">
+                <div class="modal-top-left">
+                    <img src="images/img-modal.jpg" alt="product">
+                </div> <!-- end of the left part of modal-->
+                <div class="modal-top-right">
+                    <!-- scris-->
+                    <div class="modal-top-right-1">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="reviews">
+                            <h4>21 reviews</h4>
+                        </div>
+                    </div>
+
+                    <div class="product-title">
+                        <h2>Missha All Around Safe Block Sebum Zero Sun</h2>
+                    </div>
+
+                    <div class="modal-top-right-3">
+                        <span class="modal-price">
+                            $4.00
+                        </span>
+                        <span class="modal-ml">
+                            50 ml
+                        </span>
+                    </div>
+
+                    <div class="modal-button">
+                        <button>Add to cart</button>
+                    </div>
+
+                    <div class="modal-top-right-5">
+                        <p>A portable cooling eye stick that instantly relieves puffy, tired eyes by hydrating the delicate skin and minimizing ﬁne lines around the eye for a refreshed and revitalized look.</p>
+                    </div>
+
+                </div> <!-- end of the right part of modal-->
+
+            </div> <!--END modal top-->
+            <div class="modal-bottom">
+                <span>More details</span>
+            </div> <!--END modal bottom-->
+        </div>
+
 
     </div>
 
 
     <script src="https://kit.fontawesome.com/a653ef4095.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
