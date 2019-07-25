@@ -31,7 +31,7 @@ let computeAge = function(myObjArr) {
 }
 
 console.log(computeAge(myObjArr));
-*/
+
 
 class Person {
     constructor(name, age) {
@@ -41,7 +41,6 @@ class Person {
     getAge() {
         return this.age;
     }
-
 }
 let arrayP = [];
 function popArr(array, nmbr) {
@@ -63,7 +62,36 @@ const computeAge = function(array) {
 
 console.log(computeAge(arrayP));
 
+*/
+
+var person1 = {
+    firstName: "Horea",
+    lastName: "Crisan",
+    age: 20,
+    showName: function() {
+        return this.firstName;
+    }
+}
+
+var person2 = {
+    firstName: "Bob",
+    lastName: "John",
+    age: 20,
+    showName: function() {
+        return this;
+    }
+}
+
+var person3 = {
+    firstName: "Michael",
+    lastName: "Jackson",
+    age: 20
+}
 
 
 
 
+console.log(person1.showName());
+console.log(person2.showName());
+
+console.log(this);
