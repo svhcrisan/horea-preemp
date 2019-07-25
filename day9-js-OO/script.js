@@ -62,7 +62,7 @@ const computeAge = function(array) {
 
 console.log(computeAge(arrayP));
 
-*/
+
 
 var person1 = {
     firstName: "Horea",
@@ -95,3 +95,29 @@ console.log(person1.showName());
 console.log(person2.showName());
 
 console.log(this);
+*/
+
+var calculator = {
+
+    a: null, 
+    b: null,
+
+    read: function() {
+        this.a = parseInt(prompt("First number: ", "42"));
+        this.b = parseInt(prompt("First number: ", "42"));
+    },
+    
+
+    sum: function(a, b) {
+        alert("Sum is: " + ((this.a) + (this.b)));
+    },
+
+    mul: function(a, b) {
+        alert("Multiplication is: " + ((this.a) * (this.b)));
+    }
+
+}
+
+calculator.read();
+calculator.sum();
+calculator.mul();
