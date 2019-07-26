@@ -477,7 +477,7 @@ h1 {
 /*--- MODAL ---*/
 
 .overlay {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
