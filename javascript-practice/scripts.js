@@ -4,6 +4,7 @@
     const email = document.getElementById('email');
     const checkoutBtn = document.getElementById('checkout');
 
+
     // firstName
     firstName.addEventListener('change', function(event){
         let fname = checkName(firstName.value);
@@ -82,6 +83,21 @@
     for (let i = 0; i < removeBtn.length; i++) {
         removeBtn[i].addEventListener('click', updateRow, false);
     }
+
+    //add or remove
+    const addButton = document.getElementsByClassName('add');
+    const delButton = document.getElementsByClassName('remove');
+    //add
+    for (let i = 0; i < addButton.length; i++) {
+        addButton[i].addEventListener('click', updateQuantity, false);
+    }
+
+    for (let i = 0; i < delButton.length; i++) {
+        delButton[i].addEventListener('click', updateQuantity, false);
+    }
+
+
+
 })();
 
 //help functions
@@ -99,7 +115,7 @@ function validateEmail(email) {
 }
 
 const deleteRow = (target) => {
-    target.parentElement.parentElement.style.display = "none";
+    target.parentElement.parentElement.remove();
 }
 
 const updatePrice = (targetPrice) => {
@@ -111,4 +127,38 @@ function checkIfItem(number) {
     if(number < 1) {
         checkoutBtn.disabled = false;
     }
+}
+
+function updateQuantity(event) {
+    let target = event.target;
+    let quantity = target.parentElement.getElementsByClassName("quantity")[0];
+    let unitPrice = target.parentElement.parentElement.getElementsByClassName("price")[0];
+    let totalPrice = target.parentElement.parentElement.getElementsByClassName("price-total")[0];
+    let totalPriceArray = document.getElementsByClassName("price-total");
+    
+    //let test = document.getElementsByClassName("price")[1];
+    let totalTotal = document.getElementsByClassName("total")[0];
+    let sum = 0;
+    
+    console.log(totalPriceArray);
+    if(this.classList.contains("add")){
+        quantity.innerHTML = Number(quantity.innerHTML) +1;
+        totalPrice.innerHTML = (Number(quantity.innerHTML) * Number(unitPrice.innerHTML));
+        for(let i = 0; i < totalPriceArray.length; i++) {
+            
+            sum += Number(totalPriceArray[i].innerHTML);
+           
+        }
+        totalTotal.innerHTML = Number(sum);
+    } else if (this.classList.contains("remove") && (Number(quantity.innerHTML)>1)){
+        quantity.innerHTML = Number(quantity.innerHTML) -1;
+        totalPrice.innerHTML = (Number(quantity.innerHTML) * Number(unitPrice.innerHTML));
+        for(let i = 0; i < totalPriceArray.length; i++) {
+            
+            sum += Number(totalPriceArray[i].innerHTML);
+            
+        }
+        totalTotal.innerHTML = Number(sum);
+    }
+
 }

@@ -87,6 +87,9 @@ body {
     float: right; 
     padding: 5px 0;
     border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
 }
 
 .form-group input[type="radio"] {
@@ -134,5 +137,9 @@ body {
 }
 
 .price::after {
+    content: "$";
+}
+
+.price-total::after {
     content: "$";
 }
