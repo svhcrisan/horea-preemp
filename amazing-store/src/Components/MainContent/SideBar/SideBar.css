@@ -1,0 +1,30 @@
+.sidebar-container {
+  margin-top: -5.45rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 1rem;
+  background: #fff;
+}
+
+.button-category-name {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.all-categories {
+  color: rgba(76, 76, 76, 0.7);
+  text-align: left;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+}

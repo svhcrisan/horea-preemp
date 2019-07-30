@@ -1,5 +1,6 @@
 import React from "react";
 import SideBar from "./SideBar/SideBar";
+import "./MainContent.css";
 
 class MainContent extends React.Component {
   constructor(props) {
@@ -27,10 +28,10 @@ class MainContent extends React.Component {
   }
   render() {
     return (
-      <>
+      <div className="main-content">
         <div>MainContent</div>
         <SideBar categories={this.state.categories} />
-      </>
+      </div>
     );
   }
 }
