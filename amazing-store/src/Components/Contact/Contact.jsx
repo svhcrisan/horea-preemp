@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
 
       <div className="subTitle">
-        <i class="fas fa-phone" /> 8 800505-04-83
+        <i className="fas fa-phone" /> 8 800505-04-83
       </div>
     </div>
   );

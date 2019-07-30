@@ -1,9 +1,9 @@
 .contact {
   display: flex;
   justify-content: space-between;
-  min-width: 40%;
+  min-width: 45%;
   align-items: center;
-  padding-left: 6.3%;
+  font-size: 18px;
 }
 
 .contact .subTitle {
