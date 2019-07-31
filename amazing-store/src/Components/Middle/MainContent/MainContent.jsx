@@ -22,14 +22,14 @@ class MainContent extends React.Component {
         foot: ["foot1", "foot2", "foot3"],
         hands: ["hands1", "hands2", "hands3"],
         hair: ["hair1", "hair2", "hair3"],
-        makeup: ["makeup1", "makeup2", "makeup3"]
+        makeup: ["makeup1", "makeup2", "makeup3"],
+
       }
     };
   }
   render() {
     return (
       <div className="main-content">
-        <div>MainContent</div>
         <SideBar categories={this.state.categories} />
       </div>
     );
