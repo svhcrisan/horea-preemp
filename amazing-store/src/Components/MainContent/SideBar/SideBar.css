@@ -21,10 +21,30 @@
   font-size: 18px;
 }
 
+.button-category-name:hover {
+  color: rgba(248, 203, 0, 1);
+}
+
 .all-categories {
   color: rgba(76, 76, 76, 0.7);
   text-align: left;
   padding-left: 1rem;
   padding-bottom: 1rem;
   font-size: 14px;
+}
+
+.sub-menu{
+  list-style: none;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.sub-menu li {
+  margin-bottom: 14px;
+  color: rgba(76, 76, 76, 0.7);
+  cursor: pointer;
+}
+
+.sub-menu li:hover {
+  color: rgba(248, 203, 0, 1);
 }
