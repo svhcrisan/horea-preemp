@@ -1,0 +1,7 @@
+.body-right-3 {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

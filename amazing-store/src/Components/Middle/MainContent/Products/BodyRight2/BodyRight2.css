@@ -1,0 +1,44 @@
+.body-right-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+.body-right-2 a {
+    color: #3f51b5;
+    text-decoration: none;
+}
+
+.body-right-2 ul li {
+    display: inline;
+   
+}
+
+.br2-left {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+}
+
+.br2-left li {
+    margin-right: 12px;
+}
+
+.br2-right {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display:flex;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.br2-right li {
+    text-align: right;
+}

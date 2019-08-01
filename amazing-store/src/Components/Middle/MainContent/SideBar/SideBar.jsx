@@ -1,6 +1,6 @@
 import React from "react";
 import "./SideBar.css";
-import SubMenu from "../SubMenu/SubMenu"
+import SubMenu from "./SubMenu/SubMenu"
 
 class SideBar extends React.Component {
   constructor(props) {

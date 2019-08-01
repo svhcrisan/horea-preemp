@@ -3,7 +3,7 @@
   justify-content: space-between;
   min-width: 45%;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .contact .subTitle {
@@ -17,7 +17,7 @@
 }
 
 .contact a {
-  color: "#8077aa";
+  color: #8077aa;
   margin-left: 0.5rem;
   text-decoration: none;
 }

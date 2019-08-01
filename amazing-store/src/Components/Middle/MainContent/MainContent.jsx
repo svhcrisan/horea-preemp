@@ -1,6 +1,8 @@
 import React from "react";
 import SideBar from "./SideBar/SideBar";
+import Products from "./Products/Products";
 import "./MainContent.css";
+import Ads from "./SideBar/Ads/Ads";
 
 class MainContent extends React.Component {
   constructor(props) {
@@ -30,7 +32,11 @@ class MainContent extends React.Component {
   render() {
     return (
       <div className="main-content">
-        <SideBar categories={this.state.categories} />
+        <div className="body-left">
+          <SideBar categories={this.state.categories} />
+          <Ads></Ads>
+        </div>
+        <Products></Products>
       </div>
     );
   }

@@ -1,0 +1,41 @@
+.body-right-1 {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.br1-left{
+    width: 25%;
+    
+}
+
+.br1-left h2 {
+    
+    font-weight: 400;
+    font-size: 24px;
+    
+}
+
+.br1-right{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+}
+
+.br1-right p {
+    opacity: 0.6;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.arrows {
+    margin-left: 6px;
+    padding: .2rem .4rem;
+    border-radius: 5px;
+    border-color: #000;
+    border: 1px solid lightgrey;
+}
